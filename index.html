@@ -19,7 +19,7 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
-    <header>
+    <header class="sticky">
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
@@ -50,7 +50,7 @@
         <div id="lead-content">
             <h1>Hunter Hanay</h1>
             <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <a href="Resume.pdf" download="Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -73,9 +73,13 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        Hi, I'm Hunter Hanay. I recently graduated with a Bachelor of Science in Computer Science from Seattle Pacific University and I've had the privilege to work at Avanade, where I honed my skills in client management, from gathering requirements to navigating intricate challenges, all while upholding consulting excellence. I've directly worked on creating a mobile-first, web-based insurance quoting app, taking lead roles in database design, API endpoint creation, and modernizing legacy business logic. Through this, I've collaborated intensively with senior developers, immersing myself in CI/CD pipelines using Azure DevOps, contributing to agile practices and ensuring seamless integration of our software.
+Additionally, during my Avanade internship, I developed a robust employee management system using Java Spring Boot and Angular. This experience deepened my expertise in creating dynamic UIs, RESTful APIs, and managing relational databases.
+My project, Trainr.Space, stands as a testament to my ability to lead and manage teams, where I helped in connecting trainers with clients using a React frontend and AWS backend. Here, I learned to navigate AWS, build React apps, and manage team dynamics effectively. 
+My goal is to join a company where I can contribute to meaningful projects and continue growing as a software developer. 
+Overall, I bring a diverse skill set, including proficiency in C#, .NET Core, Angular, HTML, CSS, and various Azure services. Whether it's client interaction, team leadership, or hands-on development, I'm equipped and excited to contribute!"
+I'd love to share more about my work and experiences with you. Let's connect on LinkedIn or, if you'd like, I can send you my portfolio and resume to provide a more in-depth look at my projects and technical skills. Thank you for your time, and I look forward to exploring potential opportunities with your organization.
+
                     </p>
                 </div>
             </div>
@@ -86,27 +90,28 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
+            <div data-date="August 2022 - February 2023">
                 <h3>Avanade</h3>
                 <h4>Software Engineer</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    We created a web-based, mobile-first, data-driven insurance quoting application for the insurance company's agents. I gathered requirements from stakeholders, proposed solutions that best suited differing needs, and achieved customer sign-off on designs. I utilized Azure App Services and Angular to create a responsive, user-friendly, and accessible UI at a low pay-per-use-cost. My primary responsibilities were designing the database schema, creating a code-first database using Entity Framework Core, writing API endpoints, and refactoring the legacy system business logic into the new system. I employed Angular components to build a dynamic user interface that reflected CRUD operations and database table relationships. I passed data between components using property binding, event binding, and custom events, and implemented routing to navigate between different pages and components. The database was a Microsoft SQL Server with tables featuring one-to-many and many-to-many relationships. I followed a 3-layer design pattern. I used the controller layer in ASP.NET to process requests from the Angular client. Some other additional responsibilities included integrating the Angular client with the SQL database. My experience with Angular as a back-end developer was short but intensive, but I enjoyed the process.
+                    We then delivered a demo of the application and communicated what hasn't been completed and the future plans in the next following sprints.
                 </p>
             </div>
 
-            <div data-date="September 2015 – September 2016">
+            <div data-date="June 2014 - September 2022">
                 <h3>Emerald City FC</h3>
                 <h4>Soccer Coach</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    Worked as the head coach for several boys teams rangeing from 10 years old to 17 years old. I also coached with the development program, introducing the players and parents to club soccer.
                 </p>
             </div>
 
-            <div data-date="September 2015 – September 2016">
+            <div data-date="June 2021 - August 2021">
                 <h3>Avanade</h3>
                 <h4>Software Engineer Intern</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    I developed an employee management system using a Java Spring Boot backend and an Angular frontend to keep track of employees and their projects. The frontend employed a service to handle HTTP requests for displaying employee information and managing incoming search requests based on first name, last name, or email. The backend utilized RESTful API endpoints (GET, PUT, POST, and DELETE) and Spring controllers. I employed Angular components to build a dynamic user interface that reflected CRUD operations and database table relationships. I passed data between components using property binding, event binding, and custom events, and implemented routing to navigate between different pages and components. The database was a Microsoft SQL Server with tables featuring one-to-many and many-to-many relationships. I followed a 3-layer design pattern. I used the controller layer to process requests from the client. In my application layer, I created business logic for data access and transformation. I handled data transformation my mapping entities to app bound DTOs (Data Transfer Objects) to ensure that clean data could transfer from multiple tables through one request. I used Spring data JPA in the repository layer to access, persist, and manage data between the Java objects and the relational database.
                 </p>
             </div>
         </div>
@@ -119,9 +124,6 @@
             <h3>Seattle Pacific University</h3>
             <span class="education-date">September 2020 - August 2022</span>
             <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                I was only here for 2 years to finish my degree after getting my Associates from my North Seattle CC
-            </p>
         </div>
         <!-- End .education-block -->
 
@@ -131,13 +133,7 @@
             <h4>Associates of Science</h4>
             <ul>
                 <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Data Structures 1 and 2
                 </li>
             </ul>
         </div>
