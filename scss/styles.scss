@@ -131,6 +131,14 @@ body {
     }
 }
 
+.profile-picture {
+    width: 50px; /* Adjust the size of your profile picture */
+    height: 50px;
+    border-radius: 50%; /* Makes it circular */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures it's a block-level element for margin:auto to work */
+}
+
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -457,14 +465,8 @@ footer {
         color: $text;
         margin: 0;
     }
+
     
-    .profile-picture {
-        width: 150px; /* Adjust the size of your profile picture */
-        height: 150px;
-        border-radius: 50%; /* Makes it circular */
-        margin: 0 auto; /* Centers the image horizontally */
-        display: block; /* Ensures it's a block-level element for margin:auto to work */
-    }
 }
 
 /*
