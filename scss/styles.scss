@@ -383,14 +383,14 @@ footer {
         font-size: 2.25em;
         margin-bottom: 15px;
     }
-}
 
-.profile-picture {
-    width: 150px; /* Adjust the size of your profile picture */
-    height: 150px;
-    border-radius: 50%; /* Makes it circular */
-    margin: 0 auto; /* Centers the image horizontally */
-    display: block; /* Ensures it's a block-level element for margin:auto to work */
+    .profile-picture {
+        width: 150px; /* Adjust the size of your profile picture */
+        height: 150px;
+        border-radius: 50%; /* Makes it circular */
+        margin: 0 auto; /* Centers the image horizontally */
+        display: block; /* Ensures it's a block-level element for margin:auto to work */
+    }
 }
 
 #lead-overlay {
