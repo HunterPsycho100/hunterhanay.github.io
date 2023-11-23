@@ -643,16 +643,18 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-
+    
     h2 {
         color: $heading;
-        margin-bottom: 50px;
+        // Decrease margin-bottom if there's too much space under the heading
+        margin-bottom: 30px; 
     }
 }
 
 .project {
     position: relative;
-    max-width: 900px;
+    // Increase max-width for more text space or make it percentage-based for responsiveness
+    max-width: 100%; 
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -660,14 +662,17 @@ footer {
 }
 
 .project-image {
+    // Consider resizing or repositioning the image to take less horizontal space
     float: left;
+    width: 20%; // Example of making the image smaller
 }
 
 .project-info {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 300px;
+    // Adjust margin-left according to new image size or layout
+    margin-left: 250px; // Example adjustment based on image resizing
     padding: 15px;
 
     h3 {
@@ -679,7 +684,8 @@ footer {
 
     p {
         color: $text;
-        margin: 0 0 15px 0;
+        // Decrease bottom margin to fit more text if necessary
+        margin: 0 0 10px 0;
         font-size: 0.9em;
     }
 }
@@ -688,7 +694,8 @@ footer {
     .project-info {
         position: relative;
         margin: 0;
-        padding: 30px 15px;
+        // Adjust padding to fit more text if necessary
+        padding: 15px;
         transform: none;
     }
 }
