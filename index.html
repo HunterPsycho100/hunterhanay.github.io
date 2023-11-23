@@ -166,16 +166,16 @@
                     <div class="project-info">
                         <h3>Grocery Runner</h3>
                         <p>
-                            I developed a full-stack React and ASP.NET application with PostgreSQL, streamlining grocery shopping by 
-                            automating list creation through recipe management.  
-                        </p>
-                        <p> 
-                            I then moved my local app to Azure App Services and migrated my PostgreSQL database to an Azure SQL database. This 
-                            taught me how navigate the Azure portal and create and manage resources for my project.  
-                        </p>
-                        <p>
-                            I implemented CRUD operations for "Recipes" and "Items" with a one-to-many relationship, enhancing user 
-                            experience with an intuitive homepage and interactive buttons.
+                            This is a personal project of mine where I am streamlining the grocery shopping experience. I have a 
+                            hard time planning what I want to eat and remembering dishes I've made in the past, so I created an 
+                            application that holds a list of recipes with all the ingredients needed for the recipe. Then on the 
+                            home page, the user can click a recipe to add it's ingredients to their grocery list. The application 
+                            was built locally using the dotnet CLI, React for the frontend, ASP.NET for the backend, and used 
+                            Entity Framework Core to convert my code-first database to PostgreSQL for the database. Once I 
+                            developed the minimal viable product, I hosted the application on Azure App Services and created a 
+                            Github Action to automate the build and deployment to Azure. I also moved my Postgresql database from 
+                            my local computer to an anzure SQL server database in the azure cloud. I learned a lot about creating 
+                            and managing resources in the Azure portal and choosing the right plan for my application needs. 
                         </p>
                         
                         <a href="https://groceryrunner.azurewebsites.net/">View Project</a>
@@ -192,14 +192,15 @@
                     <div class="project-info">
                         <h3>Trainr.Space</h3>
                         <p>
-                            Trainr.Space is a progressive web application that helps connect a trainer and their clients in an all in one platform. The Trainer provides a class code that the client uses to enter the class page. The Trainer and the clients have the ability to make posts and comments as well as uploading pictures and documents. Our team went through a full lifecycle of a project starting with planning sprints and stories, designing the architecture, and writing up documentation and then implementing and delivering demos.  
-                        </p>
-                        <p>
-                            It was built using React and AWS Amplify & AppSync. AWS Amplify provides a git-based workflow for hosting full-stack serverless web app with continuous deployment. AWS AppSync provides a robust, scalable GraphQL interface for application developers to combine data from multiple sources, including DynamoDB and HTTP APIs. AppSync did a lot of the heavy lifting such as automatic GraphQL schema generation from DynamoDB and integration with Amazon Cognito to control permissions for different user groups in the app and manage authentication. 
-                        </p>
-                        <p>
-                            I was responsible for building out the skeleton of the application and implementing API's with UI components using GraphQL. I would also lead daily stand up and Sprint Retrospectives. 
-                        </p>
+                            Trainr.Space is a progressive web application designed to connect trainers with their clients on a 
+                            unified platform. Clients join classes using codes provided by trainers, and both can post comments, 
+                            upload pictures, and share documents. The project underwent a full lifecycle, including planning 
+                            sprints, designing architecture, writing documentation, and delivering demos. It was developed using 
+                            React, AWS Amplify, and AppSync. Amplify supports serverless full-stack web apps with continuous 
+                            deployment, while AppSync, using GraphQL, handles data integration from multiple sources and manages 
+                            user authentication and permissions with Amazon Cognito. My role included building the application's 
+                            framework, integrating APIs with UI components, and leading daily stand-ups and sprint retrospectives. 
+                         </p>
                         <a href="#">View Project</a>
                     </div>
                     <!-- End .project-info -->
@@ -214,24 +215,16 @@
                     <div class="project-info">
                         <h3>Course Flowchart</h3>
                         <p>
-                            This local project was built using the React library. It is a flowchart that shows the most efficient class schedule for your major. 
+                            This project, built using React, creates an efficient class schedule flowchart for your major. It inputs a 
+                            .txt file containing the major's course requirements, parses the data into JSON for ease of access, and 
+                            generates an adjacency list using class codes. These codes retrieve data from the JSON, linking 
+                            prerequisites to their respective classes. The classes are then arranged using a topological sort, 
+                            forming a directed graph. The sorted class codes are queued, and each class is validated for 
+                            prerequisites, credit limits, and availability. Validated classes are added to the schedule, 
+                            while others are requeued. Users input their major, desired credits per quarter, and starting 
+                            quarter on the localhost server, resulting in a flowchart organized by year and quarter.  
                         </p>
-                        <p>
-                            The application takes in a .txt file with all the major's course requirements (class code, name, prereqs, quarter availability, and credits). I parsed the info into JSON format which made the data clean and easier to access for future functions. 
-                        </p>
-                        <p>
-                            I then created an adjacency list by first creating a list of all the class codes. Those class codes would be used to access the JSON information and whenever a class could have any prereqs, I would add the current class to the adjacency list that was associated to the prereqs. 
-                        </p>
-                        <p>
-                            I then took that adjacency list and put it into a topological sort which puts it in a list where all the nodes are pointed in one direction. 
-                        </p>
-                        <p>
-                            I then populated a queue in in that topological order with the class codes. I looped through the queue and validated if the class item at the front of the queue passed the prereq requirements, the credit space for that quarter, and whether the class was available for that quarter. If the class item did pass, then it would be added to the class schedule and marked as visited. If the class did not pass the validation process then it was appended to the queue. 
-                        </p>
-                        <p>
-                            After opening the application in your localhost server, you are presented with an input of the major's txt file, how many credits you would like to take per quarter and what quarter you would like to begin in. Then you hit submit, and a flowchart would be populated with the courses organized by year and quarter.
-                        </p>
-                        <a href="#">View Project</a>
+                        <a href="https://www.youtube.com/watch?v=uhyyPIDIJGw">View Project on YouTube - Skip to 1:50 to see demo</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
