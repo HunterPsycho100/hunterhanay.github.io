@@ -659,6 +659,7 @@ footer {
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
+    text-align: left;
 }
 
 .project-image {
@@ -684,7 +685,6 @@ footer {
 
     p {
         color: $text;
-        text-align: left;
         // Decrease bottom margin to fit more text if necessary
         margin: 0 0 10px 0;
         font-size: 0.9em;
