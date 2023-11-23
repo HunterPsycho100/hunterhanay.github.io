@@ -671,7 +671,6 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    text-align: left;
     // Adjust margin-left according to new image size or layout
     margin-left: 250px; // Example adjustment based on image resizing
     padding: 15px;
@@ -685,6 +684,7 @@ footer {
 
     p {
         color: $text;
+        text-align: left;
         // Decrease bottom margin to fit more text if necessary
         margin: 0 0 10px 0;
         font-size: 0.9em;
